@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"></form> <!--Todo formulário que usa 'method="get"' ele tem um limite de 3K bytes pra pode enviar. 
+        Então é recomendado quando utilizar textarea, utilizar method="post"-->
+    <!--'autocomplete' > para autocompletar uma caixa de texto-->
+    <!--action="" > local para onde vão ser enviados os dados do formulário-->
+        <p>
+            <!--SELECT-->
+            <label for="iest">Estado</label>  <!--'label' > elemento-->
+            <select name="estado" id="iest">  <!--Lista em HTML-->
+                    <!--Elementos da lista-->   
+            <!--Agrupação: 'CTRL + SHIFT + P'  +  'Emmet: envolver com abreviação'   +   'optgroup' -->
+                <optgroup label="Região Sudeste"> <!--'label' > atributo--><!-- Ao colocar um optgroup, é possível informar um 'label'-->
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP" selected>São Paulo</option> <!--'selected' > quando eu quiser que uma das opções da lista já venha selecionada-->
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+
+            </select>
+
+        </p>
+
+        <p>
+            <!--Caso queira digitar uma opção que não está na lista, é preciso adicionar o código abaixo: -->
+                <!--DATALIST-->
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof"> <!--Para aparecer a lista abaixo quando eu clicar na caixa 'Profissão', 1º adiciono um 'id' na datalist, 2º Na caixa de texto acima, adiciono o atributo 'list=""' e coloco o 'id' dentro-->
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+        <!--TEXTAREA-->
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea> <!-- < Para que o usuário digite a mensagem-->
+            <!--Cols: quantas colunas vão aparecer-->
+            <!--Rows: quantas linhas vão aparecer na tela-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value=" Limpar">
+        </p>
+</body>
+</html>

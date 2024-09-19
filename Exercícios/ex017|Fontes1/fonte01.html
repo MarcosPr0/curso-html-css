@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family:  'work Sans' Arial, Helvetica, sans-serif; /*Site para pesquisar combinações de fonts: > https://www.w3schools.com/cssref/css_websafe_fonts.php*/
+            /*'work Sans' > fonte para ver o peso de uma font*/
+        /*
+        Medidas absolutas
+            cm, mm, in, px, pt, pc    (in > polegada)
+        Medidas relativas
+            em, ex, rem, vw, vh, % .
+        16px geralmente é = 1em
+        È recomendado usar mais em e px.
+        */
+            font-size: 1em; /* < tamanho fonte*/   /* 16px > Tamanho geralmente mais utilizado pelos navegadores*/
+            font-weight: normal; /*para negritar a fonte*/  /*Ex de opções:lighter, normal, bold, bolder*/
+            font-style: italic;  /*para italico por exemplo*/
+            text-decoration: underline; /* Para sublinhar o texto*/
+            
+        }
+        h1 {
+            /*
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+            */
+            /*shorthand font > simplificará minhas configurações para fonts
+                -shorthand- > Taquigrafia é “A arte de escrever tão rápido quanto se fala.”
+            
+            - font-style - font-weight - font-size - font-family*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans'; /*Posso utilizar também sem necessáriamente estar todas as configurações. O importante é que estejam em ordem.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ipsa voluptate placeat optio exercitationem. 
+    Porro quasi quidem atque necessitatibus id beatae magni dolorum, harum quae, ullam ab animi officia quaerat. 
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non fugiat quos, illo hic delectus excepturi tenetur. 
+    Veritatis vero repudiandae suscipit quaerat aliquid dignissimos dolores perferendis, corporis illo soluta odio 
+    laboriosam.</p>
+    
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat at consectetur dolorem, accusamus tenetur repellat
+    ea voluptate officia adipisci eligendi optio, ipsa suscipit quam ipsam aliquid nisi soluta? Ipsam, quasi. Lorem ipsum, 
+    dolor sit amet consectetur adipisicing elit. Eum nemo optio beatae quo. Ad consequuntur aliquid reiciendis! 
+    Ut qui excepturi, quae fugit aspernatur debitis nam deserunt. Ducimus, nisi perspiciatis? Maxime.</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes 
+        ou simplismente diminua e aumente o tamanho do seu navegador.
+    </p>
+    <picture> 
+        <source media="(max-width: 750)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    <!--Para que possa aparecer uma imagem flexível no navegador(isto é que se ajusta comforme o tipo de dispositivo em que está sendo executado).
+    Utilizamos a tag 'picture'. Logo após adicionamos a tag 'source' em ordem respectiva, conforme a quantidade de imagens 
+    a serem processadas. Depois adicionamos a tag 'img' que vai indicar a imagem padrão a ser processada.-->    
+        <!--O código acima funciona da seguinte forma: 
+        1. Por padrão a imagem a ser carregada vai ser a da tag 'img';
+        2. Mas se a tela do dispositivo em que o navegador está sendo executado for menor, irá ser carregada a imagem da 2º tag 'source';
+        3. Se o tamanho da tela for menor ainda, irá ser carregada a imagem da 1º tag 'source'. E assim por diante.-->
+    </picture>
+    <h1>Reproduzindo Aúdio</h1>
+    <p>Vamos aprender a reproduzir aúdios em HTML5.</p>
+    <!--<audio src="midia/Tokyo-Drift.mp3" controls autoplay></audio>-->
+    <!--parâmetro 'autoplay' e controls > para reproduzir audio.-->
+    <!-- Se vc quiser ter compatibilidade com a maioria dos navegadores, 
+        é necessaŕio ter esses formatos de arquivo: MP3, WAV, OGG. E fazer um código no padrão do que está abaixo:-->
+    <audio preload="metadata" autoplay controls loop> <!--'preload="metadata"' carrega informações como: data, nome, duração.../ 
+        'preload="auto"' só considera que o site terminou de carregar, quando carrega o arquivo completo/ 
+        'preload="none"' não carrega nada. Apenas quando o usuário der play nos controles.
+        'loop' > quando o audio terminar ele será automaticamente reiniciar-->
+        <source src="midia/Tokyo-Drift.mp3" type="audio/mpeg"> <!--'type="audio/mpeg"' > para arquivo mp3-->
+        <source src="midia/Tokyo-Drift.ogg" type="audio/ogg">
+        <source src="midia/Tokyo-Drift.wav" type="audio/wav">
+        <!--O navegador vai tentar carregar o audio conforme a ordem programada-->
+        <!--RECOMENDAÇÃO: não utilize o arquivo .wav no site, pois é muito pesado.Isso acaba atrapalhando o carregamento do seu site.-->
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir o audio.
+        <a href="midia/Tokyo-Drift.mp3"  type="audio/mpeg">Clique para baixar o arquivo MP3</a></p>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

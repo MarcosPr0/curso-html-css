@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupig Tags</title> <!--Tags de agrupamento-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;      /*preenchimento*/
+            margin: 10px;
+            border-radius: 3px 3px 3px 3px;
+        }
+
+        nav {
+            background-color:  rgb(95, 95, 95);
+            padding: 3px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);  /*Configurações do box-shadow: 1º deslocamento horizontal, 2º deslocaento vertical, 3º espalhamento, 4º cor da sombra.*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 2px 40px 2px 40px;    /*Raio da borda | usando shorthand*/
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.452);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 2px 60px 2px 60px;
+        }
+
+        article > aside {
+            background-color: rgb(145, 145, 145);
+            text-align: center;
+            border-radius: 2px 60px 2px 60px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height:100px;
+            width: 100px;
+            background-color: white;
+            margin: 5px auto auto 7px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--Organização semântica-->
+    <!--Cabeçalho-->
+    <header>    
+        <h1>Meu Site</h1>
+        <nav> <!--Aqui vai os links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <!--Contéudo principal-->
+    <main>      
+        <section id="assuntos">
+            <p>Aprovados no Enem 2024</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid itaque, 
+                delectus quos ratione amet deserunt magni modi iure animi enim, tempore, numquam facilis 
+                bcaecati veritatis nam nihil incidunt porro!</p>
+                <aside>     <!--Algo relativo ao artigo-->
+                    <p>Artigo escrito por Marcos Sousa</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <!--Rodapé-->
+    <footer>    
+        <p>Grouping Tags</p>
+    </footer>
+    <div id="bola"></div>
+
+    <!--Apartir da versão HTML5 é permitido colocar qualquer grouping tag dentro de qualquer grouping tag.-->
+</body>
+</html>

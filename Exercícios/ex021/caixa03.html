@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas Personalizadas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            /*Borda decorada*/
+            border: 9px solid black;    /*Caso o computador não seja compatível, Posso utilizar no lugar de black o transparent.*/
+            padding: 3px;
+            text-align: center;
+            border-image-source: url("border.png");
+            border-image-slice: 21;   /*fatiar*/
+            border-image-repeat: repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

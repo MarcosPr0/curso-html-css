@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado em meu próprio servidor</p>
+    <video controls width="500" poster="imagens/carro.jpeg">
+        <source src="midias/carros(2).mp4" type="video/mp4">
+        <source src="midias/carros(3).mkv" type="video/mp4">
+        <p>Seu navegador não tem compatibiladade com reprodução de vídeos.</p>
+    </video>
+    <!--OBS: Exemplo > 
+    Tenho um vídeo com 11,5 mb.
+    E meu site tem por dia 1000 acessos
+    Com isso temos: 11,5 x 1000 = 11.500 mb / 1024 = 11,2 g de consumo de banda.
+    Conclusão: quanto maior o arquivo, maior o consumo de banda. Com isso maior vai ser o valor gasto na hospedagem desse site. E o cliente deve estar consciente disso.
+    Recomendação: buscar sempre colocar arquivos com tamanhos menores.-->
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=F1aMr9MjERD4_nBq" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+    <!-- 'allowfullscreen' . permitir tela-->
+    <!--Inserindo vídeos dessa forma, não é consumido dados do meu servidor, mas do YouTube-->
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/29315013?h=4a7399cc6d&color=ff9933&portrait=0" 
+    width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

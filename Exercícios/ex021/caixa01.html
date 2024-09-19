@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos De Caixa</title>
+    <style>
+        h1 { /*Box-Level*/
+            display: inline;   /*   >   Possso transformar o h1 no tipo de caixa inline-level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* 
+            border-width: 10px;               
+            border-style: solid;               
+            border-color: darkslategray; 
+            */   
+            /*Usando shorthands na propriedade de border*/
+            border: 10px solid darkslategray;
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            /*Usando shorthands na propriedade de padding*/
+            /*padding: 10px 20px;     >     Quando o valor de cima for o mesmo de baixo, e o valor da esquerda for o mesmo da diretita; usa-se a propriedade dessa forma.
+            padding: 10px 10px 10px 10px;   >  Quando todos os valores são iguais, posso simplificar para apenas um. 
+            Veja a baixo:*/
+            padding: 10px;
+
+            /*
+            margin-top: 20x;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+            /*Usando shorthands na propriedade de margin*/
+            margin: 20px auto 40px auto;    /*  >   para centralizar automaticamente, é utilizado: auto.*/
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color:  salmon;
+            */
+            /*Usando shorthands na propriedade de outline*/
+            outline: 5px dashed salmon;
+
+        /* ' margin: auto; '  >  Usado em caixas para centralizar.*/
+        /*
+        Ordem: 
+         top    (em cima)
+         right  (direita)
+         bottom (em baixo)
+         left   (esquerda)
+        É recomendavél sempre configurar a caixa no sentido horário
+        */
+        /*
+        Traduções:
+        margin  = margem
+        padding = preenchimento
+        height  = altura
+        width   = largura
+        style   = estilo
+        weidth  = largura ou espeçura
+        color   = cor de algo
+        */
+        }
+
+        a { /*Inline Level*/
+            display: block;     /*  >   Posso transformar o link em caixa do tipo box-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 22px;
+            padding-right: 41px;
+            padding-bottom: 9px;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">os links são exemplos de caixas inline-level</a>
+    . Vamos ver como tudo isso funciona</p>
+</body>
+</html>

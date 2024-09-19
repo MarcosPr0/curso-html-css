@@ -1,0 +1,45 @@
+@charset "UTF-8";
+ /*
+        Identificação:
+    Em HTML é id = em CSS é #
+        Classificação:
+    Em HTML é class = em CSS é . 
+ */
+body {
+    background-color: #5DCFC0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #233331;
+    color: #5DCFC0;
+}
+
+h1 {
+    color: #233331;
+}
+
+h2 {
+    color: #65A59C;
+}
+
+.basico {
+    color: #6ca565;
+}
+
+.intermediario {
+    color: #a5a465;
+}
+
+.avançado {
+    color: #a56565;
+}
+.destaque {
+    background-color: #f3f34f9f;
+}
+
+#html {
+    text-decoration: underline;
+}
+/*Em CSS geralmente não se usa o nome da tag, mas o nome da classe*/
